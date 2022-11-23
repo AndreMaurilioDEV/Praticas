@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            background-color: white;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            height: 500px;
+            width: 500px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #d3d3d3 ;
+            border-radius: 20px;
+        }
+
+        .container h1{
+            color: black;
+            font-family: Poppins;
+        }
+
+        .t1{
+            text-align: left;
+            padding: 20px 0 20px 40px;
+            
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 60px;
+            
+        }
+
+        .login{
+            padding: 15px 10px;
+            border: 1px #d3d3d3  solid;
+            border-radius: 3px;
+            
+            
+        }
+
+        .password{
+
+            padding: 15px 10px;
+            border: 1px #d3d3d3  solid;
+            border-radius: 3px;
+
+        }
+
+        .butao{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            
+
+        }
+
+        button{
+            font-family: Poppins;
+            color: white;
+            padding: 15px 100px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            background-color: #41c041af;
+        }
+
+        button:hover{
+            background-color: #258825af;
+            cursor: pointer;
+        }
+
+        .fgt{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .fgt:hover{
+            color: #41c041af;
+            cursor: pointer;
+        }
+
+        
+
+        p{
+            font-family: Poppins;
+        }
+
+        .acesso{
+            font-family: Poppins;
+            font-weight: 600;
+
+        }
+
+        .fgt p{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .logo{
+            font-size: 30px ;
+            padding: 10px 30px;
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+        }
+
+        .back{
+            font-size: 15px ;
+            padding: 10px 30px;
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+        }
+
+        .back a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .back a:hover{
+            color: #3d3d3d;
+        }
+
+        .txt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .submit{
+            font-size: 12px;
+            padding-left: 125px;
+        }
+
+        .submit a{
+            text-decoration: none;
+            color: #41c041af;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="back">
+            <a href="index.html" target="_self" rel="back">VOLTAR</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="t1">
+            <h1>Log in</h1>
+        </div>
+        <div class="inputs">
+            <div class="txt">
+                <p class="acesso">Email</p>
+                <p class="submit"> Não tem uma conta?<a href="#"> Cadastre-se</a></p>
+            </div>
+            <input type="text" class="login">
+            <p class="acesso">Password</p>
+            <input type="text" class="password">
+        </div>
+        <div class="butao"><button>Log in</button></div>
+        <div class="fgt">
+            <p>Esqueceu a senha?</p>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
