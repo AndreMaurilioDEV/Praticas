@@ -10,7 +10,7 @@ header{
     
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #a1a1a1;
+    background-color: white;
 }
 
 .itensnav{
@@ -26,6 +26,7 @@ header{
 
 .logo{
     font-family: Poppins, sans-serif ;
+    color: #0C85B9;
 }
 
 
@@ -36,17 +37,19 @@ header{
 
 .itensnav a{
     text-decoration: none;
-    color: #202020;
+    color: #0C85B9;
     font-family: Poppins, sans-serif ;
 }
 
-
+.box01{
+    background-color: #28617F;
+}
 
 nav{
     display: flex;
     justify-content: space-around;
     
-    background-color: #a1a1a1;
+    background-color: white;
     width: 100%;
     
 }
@@ -67,19 +70,19 @@ nav{
 }
 
 .cdst{
-    background-color: black;
+    background-color: #0C85B9;
     color: white;
     transition: 1s background;
 }
 
 .cdst:hover{
-    background-color: #3d3d3d;
+    background-color: #0C5B91;
     transition: 1s background;
 }
 
 .section-1{
     height: 400px;
-    background-color: #d8d6d6;
+    background-color: #28617F;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,19 +94,25 @@ nav{
 .card{
     height: 250px;
     width: 200px;
-     background-color: #a1a1a1;
+     background-color: #0C85B9;
      margin-top: 20px;
      margin-bottom: 20px;
 }
 
+.card:hover{
+    transform: scale3d(1.1,1.1,1);
+}
+
 
 .titulo{
+    color: white;
     display: flex;
     justify-content: center;
     font-family: Poppins, sans-serif;
 }
 
 .subtitulo{
+    color: white;
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -112,6 +121,7 @@ nav{
 
 }
 .desc{
+    color: white;
     display: flex;
     justify-content: center;
     font-family: Poppins, sans-serif;
@@ -131,6 +141,7 @@ nav{
 }
 
 .btncard{
+    
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -139,4 +150,56 @@ nav{
 .btncard button{
     padding: 5px 10px;
     cursor: pointer;
+    color: #1A729F;
+    border: none;
 }
+
+.section02{
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.icons{
+    display: flex;
+    
+}
+
+.cardi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+   
+}
+
+.i{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+i:first-child{
+    margin-left: 0;
+}
+
+.span{
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
