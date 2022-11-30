@@ -154,52 +154,49 @@ nav{
     border: none;
 }
 
-.section02{
-    height: 500px;
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-2{
+    height: 200px;
     background-color: white;
-
-}
-
-.icons{
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
 }
 
-.cardi{
+.icon02{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100px;
+}
+
+.icon02 img{
+    width: 50px;
+    height: 50px;
+}
+
+.card02{
     height: 100px;
-   
+    width: 100px;
+     background-color: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
 }
 
-.i{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
-
-i:first-child{
-    margin-left: 0;
-}
-
-.span{
-    font-size: 16px;
+.subtitulo02{
+    font-size: 12px;
+    color: #0C85B9;
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
 }
 
-
-
-
+.subtitulo02 a{
+    text-decoration: none;
+    color: #0C85B9;
+}
 
 
 
