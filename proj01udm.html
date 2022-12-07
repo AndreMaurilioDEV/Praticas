@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: lightgray;
+        }
+
+        header{
+            background-image: url(assets/bg-3.jpg);
+            background-size: cover;
+            background-position: right center;
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        
+
+        .itensnav{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+
+        }
+
+        ul{
+            display: flex;
+            margin-right: 20px;
+            margin-top: 30px;
+            
+        }
+
+        li{
+            list-style-type: none;
+            margin-left: 20px;
+            border: 1px solid white;
+            padding: 10px;
+            color: white;
+            background: rgba(0,0,0,0.2);
+        }
+
+         a{
+            text-decoration: none;
+        }
+
+        
+
+        .t{
+            font-size: 2.7em;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+            margin-bottom: 40px;
+        }
+
+         
+
+        .p p{
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            color: white;
+            font-size: 20px;
+            
+        }
+
+        
+
+        .cards{
+            height: 250px;
+            width: 70%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .content{
+            height: 150px;
+            width: 70%;
+            background-color: white;
+            margin: auto;
+            margin-top: 20px;
+
+
+        }
+
+    
+
+        .h1main{
+            background-color: white;
+            padding: 10px 10px 0px 10px;
+            
+        }
+
+        .h1main h1{
+            background-color: lightgray;
+            color:black;
+            border-bottom: 1px solid gray;
+            padding: 5px 5px 5px 5px;
+            
+        }
+
+        .card{
+            height: 200px;
+            width: 400px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: gray;
+            
+
+        }
+
+        .icon img{
+            height: 190px;
+            width: 100%;
+        }
+
+        .desc{
+            color: white;
+            background-color: gray;
+            padding: 10px;
+
+        
+        }
+
+        .desc a{
+            text-decoration: none;
+            color: white;
+        }
+
+        footer{
+            text-align: center;
+            background-color: gray;
+            margin-top: 30px;
+            padding: 25px 0px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    
+    
+
+    <header>
+
+        <nav>
+            <div class="itensnav">
+                <ul>
+                    <a href="#"><li>INÍCIO</li></a>
+                    <a href="#"><li>QUEM SOU EU</li></a>
+                    <a href="#"><li>CONTATO</li></a>
+                </ul>
+            </div>
+        </nav>
+
+                 <div class="contentheader">
+                     <div class="t">
+                         <h1>CURSO WEB FUNDAMENTOS</h1>
+                     </div>
+                         <div class="p">
+                        <p>Aprenda HTML, CSS e Javascript</p>
+                         </div>
+                 </div>
+         
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <div class="icon">
+                    <a href="#"><img src="assets/card_01.png" alt=""></a>
+                </div> 
+                <div class="desc">
+                    <a href="#">
+                        <p>SELETORES</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <a href="#"><img src="assets/card_02.jpg" alt=""></a>
+                </div>
+                <div class="desc">
+                    <a href="#">
+                        <p>POSICIONAMENTO</p>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="icon">
+                    <a href="#"><img src="assets/card_03.jpg" alt=""></a>
+                </div>
+                <div class="desc">
+                    <a href="#">
+                        <p>FONTES E ÍCONES</p>
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content">
+            <div class="conteudo">
+                <div class="h1main">
+                    <h1>Titulo</h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2016</p>
+    </footer>
+    
+</body>
+</html>
