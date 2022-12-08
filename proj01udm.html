@@ -50,10 +50,15 @@
             padding: 10px;
             color: white;
             background: rgba(0,0,0,0.2);
+            letter-spacing: 2px;
         }
 
          a{
             text-decoration: none;
+        }
+
+        li:hover{
+            background-color: rgb(0, 0, 0,0.4);
         }
 
         
@@ -65,14 +70,20 @@
             margin-bottom: 40px;
         }
 
+        .p{
+            text-align: center;
+        }
+
          
 
         .p p{
-            display: flex;
-            justify-content: center;
-           align-items: center;
+            
+           display: inline-block;
             color: white;
             font-size: 20px;
+            padding: 10px;
+            background-color: rgb(0, 0, 0,0.4);
+            border-bottom: 1px solid white;
             
         }
 
@@ -83,7 +94,7 @@
             width: 70%;
             background-color: white;
             display: flex;
-            justify-content: space-around;
+            /*justify-content: space-around;*/
             margin: auto;
             margin-top: 20px;
 
@@ -116,24 +127,32 @@
         }
 
         .card{
-            height: 200px;
+            height: 190px;
             width: 400px;
             margin-top: 10px;
-            margin-left: 10px;
+            margin-left: 35px;
             background-color: gray;
             
 
         }
 
+        .card:last-child{
+            margin-right: 0px;
+        }
+
+        
+
         .icon img{
             height: 190px;
             width: 100%;
+            display: block; /*Tira o pequeno espaço entre a imagem e o box do paragráfo, já que é inline*/
         }
 
         .desc{
             color: white;
             background-color: gray;
             padding: 10px;
+            letter-spacing: 2px;
 
         
         }
@@ -144,12 +163,17 @@
         }
 
         footer{
-            text-align: center;
             background-color: gray;
+            text-align: center;
             margin-top: 30px;
             padding: 25px 0px;
             color: white;
         }
+
+
+        
+    
+    
 
 
     </style>
@@ -185,7 +209,7 @@
         <section class="cards">
             <div class="card">
                 <div class="icon">
-                    <a href="#"><img src="assets/card_01.png" alt=""></a>
+                    <img src="assets/card_01.png" alt="">
                 </div> 
                 <div class="desc">
                     <a href="#">
