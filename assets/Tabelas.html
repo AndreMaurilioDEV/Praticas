@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body{
+            font-family: Poppins;
+
+        }
+
+        .table{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            
+        }
+
+         th, td {
+            border: solid 1px black;
+            text-align: center;
+        }
+
+        th{
+            background-color: gray;
+        }
+
+        td{
+            background-color: rgb(238, 238, 238);
+        }
+
+        #att td{
+            background-color: rgb(224, 224, 143);
+            color: red;
+        }
+
+        caption{
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+
+
+        
+    </style>
+</head>
+
+
+<body>
+
+    <div class="table">
+        <table>
+            <caption>Tabela de preços de cursos</caption>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Preço</th>
+        
+            </tr>
+            <tr>
+        
+                <td rowspan="3">Design</td>
+                <td>Illustrator</td>
+                <td>R$ 1000,00</td>
+            </tr>
+            <tr>
+        
+        
+                <td>Illustrator</td>
+                <td>R$ 1000,00</td>
+            </tr>
+            <tr>
+        
+        
+                <td>Illustrator</td>
+                <td>R$ 1000,00</td>
+            </tr>
+            <tr>
+        
+                <td >Desenvolvimento</td>
+                <td>CSS</td>
+                <td>R$ 1000,00</td>
+            </tr>
+            <tr>
+        
+                <td>Medicina</td>
+                <td>Cirurgião</td>
+                <td>R$ 4500,00</td>
+            </tr>
+            <tr>
+        
+                <td rowspan="2">Engenharia</td>
+                <td>Engenharia de Pesca</td>
+                <td>R$ 850,00</td>
+            </tr>
+            <tr>
+        
+        
+                <td>Engenharia Mecânica</td>
+                <td>R$ 700,00</td>
+            </tr>
+            <tr id="att">
+                <td colspan="3">Valores Sujeitos a alterações sem prévio aviso.</td>
+            </tr>
+    </div>
+
+
+
+        
+        
+
+
+
+    </table>
+    
+</body>
+</html>
