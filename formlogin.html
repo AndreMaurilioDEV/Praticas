@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login</title>
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <style>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+           
+            background: linear-gradient(to right, #8e2de2, #4a00e0);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Poppins;
+        }
+
+        
+        .formlogin{
+            height: 505px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            background-color: white;
+           
+        }
+
+        .legend{
+            
+            margin: 0px 20px 0px 40px ;
+            font-size: 20px;
+        }
+
+        .legend h1{
+            padding-top: 2px;
+        }
+
+        
+
+        .boxinput{
+            display: flex;
+            justify-content: center;
+        }
+
+        .inputs{
+            margin-top: 30px;
+            margin-bottom: 0px;
+            
+        }
+
+        
+
+        .input{
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        
+        }
+
+        .input input{
+            border: none;
+            border-bottom: 1px solid #8e2de2;
+            
+            
+        }
+
+        .input input:focus{
+            
+            box-shadow: 0 0 0 0;
+            border: 0 0 1px 0px #8e2de2;
+            outline: 0;
+            
+        }
+
+        .input label{
+            font-weight: 700;
+        }
+
+        
+
+        #user, #password{
+            
+           display: block;
+           padding: 5px 0px;
+            width: 350px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-sizing: border-box; /*Tira o padding padrão do input*/
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            
+            
+            
+        }
+
+        .button input{
+            font-size: 16px;
+            background: linear-gradient(to left, #4766E6, #8e54e9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .btn{
+            margin-top: 10px;
+            padding: 10px 100px;
+            
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer span{
+            font-size: 14px;
+        }
+
+        .boxsocial{
+            
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            
+        }
+
+        .social-facebook{
+            margin-top: 15px;
+            background-color: #3b5998;
+            padding-right: 60px;
+            padding-top: 2px;
+            border-radius: 5px;
+            
+        }
+
+        .social-twitter{
+            background-color: #00acee;
+            padding-right: 60px;
+            padding-top: 2px;
+            border-radius: 5px;
+            margin-top: 15px;
+            
+        }
+
+        .social-facebook i, .social-twitter i{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .social-facebook a, .social-twitter a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    
+        <div class="container">
+            <form action="#" method="post" class="formlogin">
+            
+            
+                        <div class="legend">
+                            <h1>Login</h1>
+                        </div>
+            
+                    <div class="boxinput">
+                        <div class="inputs">
+                            <div class="input">
+                                <label for="user">Usuário</label>
+                                <input type="text" name="username" id="user" placeholder="Enter your username" autofocus>
+                            </div>
+                            <div class="input">
+                                <label for="password">Senha</label>
+                                <input type="password" name="pass" id="password" placeholder="Enter your password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button"><input type= "submit" value="Continue" class="btn"></div>
+                    <div class="footer"><span>Or Connect With Social Media</span></div>
+
+                    <div class="boxsocial">
+                        <div class="socialfield">
+                            <div class="social-facebook">
+                                <a href=""> <i class="fa-brands fa-facebook-f"></i>Sign in with Facebook</a>
+                            </div>
+                            <div class="social-twitter">
+                                <a href=""> <i class="fa-brands fa-twitter"></i>Sign in with Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+            
+        </div>
+    
+    
+</body>
+</html>
