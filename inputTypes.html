@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+    <style>
+        .formlogin{
+            width: 500px;
+        }
+
+
+        #user, #numero, #nasc, #submit, #estado, #labelestado, #viagem, #lbltermos, #ptermo, #labelfile {
+            display: block;
+        }
+
+        textarea{
+            resize: none;
+        }
+    </style>
+    
+       
+</head>
+<body>
+    <form action="#" method="post" class="formlogin">
+        <fieldset>
+            <legend>Formulário de Vaga</legend>
+            <label for="user">Email</label>
+            <input type="email" name="email" id="user" required maxlength="30" placeholder="digite um email válido"> <!--Com o type email, um mobile, por exemplo, pode mudar a apresentação do teclado para ponto, arroba, .com etc. 
+            atributo required, obriga o usuário preencher o campo. 
+            maxlenght, quantidade máxima que o usuário pode digitar. Existe também o minlenght-->
+
+
+            <label for="numero">número de filhos</label>
+            <input type="number" name="n°" id="numero" min="0" max="10"> <!-- Type number apenas aceita números e apresenta seta para cima e baixo(desktop) ou teclado de números(mobile)-->
+            <!--   Vai de 0 para cima com o min="0" ou até algum número com max="10", por exemplo.  -->
+
+
+            <label for="nasc">nascimento</label>
+            <input type="date" name="date" id="nasc" min="1998-01-30" max="2004-01-30"> <!--Mostra um calendário para seleção de data, mês e ano.-->
+            <!-- Uma data de nascimento que permite a vaga de emprego para 18(2004) até 24 anos(1998)-->
+
+
+            <p>Sexo:</p>
+            <label for="sexualidade">Masculino</label>
+            <input type="radio" name="sexo" id="sexualidade" value="M"> <!-- Tipo radio apenas permite selecionar opções, exemplo masculino ou feminino.
+            Para selecionar apenas uma o name dos inputs radio devem ser iguais(sexo).  -->
+            <label for="sexualidade">Feminino</label>
+            <input type="radio" name="sexo" id="sexualidade" value="F">
+            <!--No caso de dois inputs com mesmo name, nesse caso, é preciso value diferentes para identificação da opçaõ selecionada. sexo(name)=M(value) ou sexo=M -->
+
+
+            <label for="estado" id="labelestado">Estado:</label> <!-- servidor recebe estado(name) = SP(value), por exemplo. -->
+            <select name="estado" id="estado" >
+                <option value="SP">São Paulo</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+
+            <label for="viagem">Disponível para viagens?</label> <!-- servidor recebe viagem(name) = sim(value), por exemplo. -->
+            <select name="viagem" id="viagem">
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+
+
+            
+        </fieldset>
+
+
+
+        <fieldset>
+           <legend> Área de interesse</legend>
+
+            <label for="area">        
+           <input type="checkbox" name="html" class="area" value="html"> HTML  <!-- para marcar uma opção clicando na palavra, basta envolver o input com label. -->
+            </label>   
+            
+            <label for="area">        
+                <input type="checkbox" name="css" class="area" value="css"> CSS  <!-- para marcar uma opção clicando na palavra, basta envolver o input com label. -->
+                 </label> 
+
+                 <label for="area">        
+                    <input type="checkbox" name="java" class="area" value="java"> JAVA  <!-- para marcar uma opção clicando na palavra, basta envolver o input com label. -->
+                     </label> 
+
+                     <label for="area">        
+                    <input type="checkbox" name="react" class="area" value="react"> REACT  <!-- para marcar uma opção clicando na palavra, basta envolver o input com label. -->
+                     </label> 
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre você:</legend>
+            <textarea name="texto" id="textarea" cols="50" rows="10" minlength="25" >Escreva sobre você aqui</textarea>
+
+            <label id="ptermo">Termos de Contrato de Experiência </label>
+            <textarea name="contrato" id="contrato" cols="50" rows="10" disabled>Contrato de experiência é o acordo bilateral firmado entre empregado e empregador, com prazo máximo de 90 dias, em que as partes poderão aferir aspectos subjetivos, objetivos e circunstanciais relevantes à continuidade ou extinção do vínculo empregatício. É contrato empregatício cuja delimitação temporal justifica-se em função da fase probatória por que passam geralmente as partes em seguida à contratação efetivada.</textarea>
+
+            <label for="file" id="labelfile">Faça o upload do seu currículo:</label>
+            <input type="file" name="curriculo" id="curriculo" accept="image/jpeg, .pdf" required>
+
+
+
+            <label for="termos" id="lbltermos">
+                <input type="checkbox" name="termos" id="termos" value="aceito" checked>Li e Aceito os termos <!--atributo checked, o check já vem selecionado. -->
+            </label>
+
+            <input type="range" name="exemplo" id="range" min="0" max="10" step="2"> <!-- vai de 0 a 10 pulando de 2 em 2-->
+
+
+        </fieldset>
+
+
+
+        <input type="submit" value="Enviar" id="submit">
+        <input type="reset" value="reset">
+        
+    </form>
+</body>
+</html>

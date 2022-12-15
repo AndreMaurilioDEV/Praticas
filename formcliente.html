@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Clientes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: white;
+            font-family: Poppins, sans-serif;
+        }
+
+        #inpemail, #inpnome, #inptelefone{
+            display: block;
+        }
+
+        #inpemail, #inpnome, #inptelefone, #inpcidade, #inpestado, #inpend {
+            width: 100%;
+        }
+
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+            height: 640px;
+            
+        }
+
+        legend{
+            text-align: center;
+            background-color: #0C85B9;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+        }
+
+        fieldset, .formcliente{
+            height: 100%;
+            
+        }
+         fieldset{
+            border: 2px solid #0C85B9 ;
+            
+            
+         }
+
+        .formcliente{
+           
+            padding: 10px;
+            background-color:#28617F ;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .inputbox input{
+            padding: 10px 0px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color:#28617F ;
+            
+        }
+
+        input{
+            color: white;
+          ;
+        }
+         input:focus{
+            
+            box-shadow: 0 0 0 0;
+            border: 0 0 0px 0px;
+            outline: 0;
+        }
+
+        .inputbox{
+            margin: 15px 5px 0px 5px;
+           
+        }
+
+        .inputbox ::placeholder{
+            color: white;
+        }
+
+        p{
+            margin: 10px 0px 5px 10px;
+            color: white;
+        }
+
+        label{
+            color: white;
+        }
+
+        #data{
+            color: white;
+            font-weight: 500;
+        }
+
+        #inpdata{
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 2px;
+            padding-right: 45px;
+            color: black;
+        }
+
+        .inpsubmit{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .inpsubmit input{
+            padding: 10px 80px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(to right,#0C85B9, #145172 );
+            
+        }
+            
+        
+
+        
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="#" class="formcliente" method="post">
+        <fieldset>
+        
+                
+                    <legend>Formulário de clientes</legend>
+                    <div class="inputbox">
+                        <input type="email" name="email" id="inpemail" placeholder="Email" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="nome" id="inpnome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="tel" name="telefone" id="inptelefone" placeholder="Telefone" minlength="15" required>
+                        <small>formato: (00) 0 0000-0000 </small>
+                    </div>
+                    
+                        <p>Sexo:</p>
+                        <input type="radio" name="sexo" id="sexualidade" value="M">
+                        <label for="sexualidade">Masculino</label>
+                        <br>
+                        <input type="radio" name="sexo" id="sexualidade" value="F">
+                        <label for="sexualidade">Feminino</label>
+                        <br>
+                        <input type="radio" name="sexo" id="sexualidade" value="N">
+                        <label for="sexualidade">Outro</label>
+
+                        <div class="inputbox">
+                            <label for="date" id="data">Data de nascimento:</label>
+                            <input type="date" name="data" id="inpdata">
+                        </div>
+                    
+                    <div class="inputbox">
+                        <input type="text" name="cidade" id="inpcidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="estado" id="inpestado" placeholder="Estado" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="endereco" id="inpend" placeholder="Endereço" required>
+                    </div>
+                
+                    <div class="inpsubmit"><input type="submit" value="Enviar"></div>
+        </fieldset>
+
+        
+        </form>
+    </div>
+    
+</body>
+</html>
