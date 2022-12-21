@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 03</title>
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .box{
+            display: flex;
+            
+        }
+
+        .box02{
+            width: 900px;
+        }
+
+        
+        
+        .lateral{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-image: url(projetostrata/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-color: lightgray;
+            height: 954px;
+            width: 40%;
+        }
+
+        .desclateral p{
+            line-height: 25px;
+            font-size: 25px;
+            text-align: right;
+            color: gray;
+            margin-top: 30px;
+
+        }
+
+        
+
+        article.top{
+            height: 400px;
+            width: 900px;
+             margin: auto;
+        }
+
+        article.cards, article.contact{
+            width: 900px;
+            margin: auto;
+        }
+
+        .icon{
+            
+            text-align: right;
+        }
+        
+        .content img{
+            border-radius: 50%;
+            
+            
+        }
+
+        .rodape{
+            position: absolute;
+            top: 80%;
+            left: 46%;
+            color: gray;
+        }
+
+        .rodape ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        .rodape li i{
+            display: inline-flex;
+            margin-left: 22px;
+            font-size: 25px;
+        }
+
+        .rodape p{
+            margin-top: 20px;
+        }
+
+        #principal{
+            
+          
+            position: absolute;
+            left: 40%;
+            float: right;
+            width: 60%;
+            background-color: white;
+            
+        }
+
+        .contentprincipal{
+            padding: 100px 0px;
+        }
+
+        .contentprincipal p{
+            margin-top: 25px;
+            font-size: 17px;
+        }
+
+        h2{
+            margin-top: 50px;
+        }
+        
+
+        .contentprincipal button{
+            margin-top: 35px;
+        }
+
+        .cards1{
+        
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .card img{
+            border-radius: 5px;
+        }
+
+        .desc, .subdesc{
+            margin-top: 20px;
+            
+        }
+        .subdesc{
+            font-size: 12px;
+        }
+
+        .btn{
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+
+        .btn button{
+            padding: 10px 40px;
+        }
+
+        .btncards button{
+            padding: 10px 40px;
+        }
+
+        .btncards{
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+
+        .desccontact{
+            margin-top: 25px;
+
+        }
+
+        
+
+        
+        
+
+        #inpareatxt{
+            display: block;
+            width: 380px;
+            margin-top: 15px;
+            padding: 10px 0px 0px 10px;
+            border-radius: 5px;
+        }
+
+        #inptext, #inpemail {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        #inpemail{
+            margin-left: 7px;
+        }
+
+        #submit{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+
+
+        .inputsarea{
+            margin-top: 25px;
+            width: 400px;
+        }
+
+        
+
+        .iconcard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 370px;
+            height: 217px;
+            background-image: url(projetostrata/thumbs/01.jpg);
+        }
+
+        .iconcard p{
+            border-radius: 5px;
+            border: 2px solid gray;
+            padding: 5px 8px;
+            background-color: rgb(0, 0, 0,0.5);
+            opacity: 0;
+            color: white;
+            
+        }
+
+        
+
+        a:hover .iconcard p{
+            opacity: 1;
+            
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <article class="lateral">
+            <div class="content">
+                <div class="icon"><img src="projetostrata/avatar.jpg" alt=""></div>
+                <div class="desclateral">
+                    <p>I am Strata, a super simple <br> responsive site templete freebie <br> crafted by HTML5 UP.</p>
+                </div>
+                <div class="rodape">
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                        <li><i class="fa-solid fa-globe"></i></li>
+                        <li><i class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                    <p>Untitled | Design:HTML 5UP</p>
+                </div>
+            </div>
+        </article>
+        
+            
+                <div id="principal">
+                
+                        <article class="top">
+                            <div class="contentprincipal">
+                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Possimus, nesciunt.</h1>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, alias voluptatibus? Ut, magni. Repellat aut minus reprehenderit asperiores quisquam! Sit alias, aliquid ipsum iusto voluptate, nisi facere, omnis quasi officia porro laborum libero. Ea cum dolor vitae ipsam fuga corrupti laudantium a nostrum? A voluptatem soluta doloribus delectus. Natus ea sunt, quas similique eum distinctio iusto inventore quia deserunt veniam quibusdam sapiente, sed debitis id adipisci ipsum error. Aut voluptas est quo molestiae, repellendus alias?</p>
+                                <div class="btn"><button>Learn More</button></div>
+                                <hr>
+                            </div>
+                           
+                        </article>
+                        
+                         <article class="cards">
+                             <h2>Recent Work</h2>
+                             <div class="cards1">
+                                <div class="overlay">
+                                    <div class="card">
+                                    
+                                            <a href="google.com">
+                                                <div class="iconcard"><p>View</p></div>
+                                            </a>
+                                            <div class="desc"><span>Lorem ipsum dolor sit amet.</span></div>
+                                            <div class="subdesc">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            </div>
+                                </div>
+                                
+                                </div>
+                                <div class="card">
+                                    
+                                    <img src="projetostrata/thumbs/02.jpg" alt="">
+                                    <div class="desc"><span>Lorem ipsum dolor sit amet.</span></div>
+                                    <div class="subdesc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="cards1">
+                                <div class="card">
+                                    <img src="projetostrata/thumbs/03.jpg" alt="">
+                                    <div class="desc"><span>Lorem ipsum dolor sit amet.</span></div>
+                                    <div class="subdesc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="projetostrata/thumbs/04.jpg" alt="">
+                                    <div class="desc"><span>Lorem ipsum dolor sit amet.</span></div>
+                                    <div class="subdesc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="btncards"><button>Full Portfolio</button></div>
+                         <hr>
+                         </article>
+                         
+                
+                             <article class="contact">
+                                 <h2>Get in Touch</h2>
+                                 
+                                     <div class="desccontact">
+                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit accusantium at nulla libero, quas corrupti earum animi architecto ut non blanditiis deleniti consequuntur. Aspernatur eveniet non vel nemo illo nulla minus asperiores. Minus, officiis quis.</p>
+                                     </div>
+                                                 
+                                    <div class="inputsarea">
+                                 <input type="text" placeholder="Name" id="inptext">
+                                 <input type="email" name="email" id="inpemail" placeholder="Email">
+                                 <textarea name="txtarea" id="inpareatxt" cols="20" rows="10" placeholder="Message"></textarea>
+                                 <input type="submit" value="Send Message" id="submit">
+                                </div>
+                                 <hr>
+                             </article>
+                
+                
+                        </div>
+            
+
+    </div>
+
+
+    
+</body>
+</html>
