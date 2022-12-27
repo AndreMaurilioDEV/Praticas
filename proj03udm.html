@@ -54,9 +54,14 @@
             line-height: 25px;
             font-size: 25px;
             text-align: right;
-            color: gray;
+            color: #A9A9A9;
             margin-top: 30px;
 
+        }
+
+        .desclateral a{
+            text-decoration: underline;
+            color: #A9A9A9;
         }
 
         
@@ -193,14 +198,15 @@
 
         #inpareatxt{
             display: block;
-            width: 380px;
-            margin-top: 15px;
+            width: 445px;
+            height: 150px;
             padding: 10px 0px 0px 10px;
             border-radius: 5px;
         }
 
         #inptext, #inpemail {
-            padding: 10px;
+            display: block;
+            padding: 10px 45px 10px 10px;
             border-radius: 5px;
             background-color: #DCDCDC;
             border: none;
@@ -230,9 +236,14 @@
 
         .iconcard{
             position: relative;
-            width: 370px;
+            width: 400px;
             height: 217px;
-            background-image: url(projetostrata/thumbs/01.jpg);
+            border-radius: 5px;
+        }
+
+        .iconcard img{
+            width: 100%;
+            height: 100%;
         }
 
         .overlay{
@@ -297,7 +308,7 @@
             text-align: left;
             margin-top: 25px;
             width: 200px;
-            margin-left: 25px;
+            margin-left: 115px;
             color: #A9A9A9;
             
         }
@@ -351,6 +362,12 @@
             height: 120px;
         }
 
+        .elements a{
+            text-decoration: none;
+            color: #20B2AA;
+
+        }
+
         .elements h4,h5,h6{
             margin-top: 20px;
         }
@@ -386,18 +403,87 @@
             width: 900px;
             padding: 30px;
         }
+
+        .elements ul ol{
+            display: inline-block;
+        }
+
+        .elements li{
+            list-style-position: inside;
+            margin-top: 10px;
+        }
+
+        .elements ol li{
+            list-style-type: decimal;
+        }
+
+        .itenslist{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .itenslist h4{
+            margin-bottom: 25px;
+        }
         
+        /*label{
+
+            
+        }*/
+        
+        .formarea{
+            display: flex;
+        }
+
+        .inp1 label{
+            margin-left: 8px;
+        }
+
+        .inp3{
+            margin-top: 25px;
+        }
+
+        table{
+            width: 900px;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        #table2 td{
+            border: 1px solid #A9A9A9;
+
+        }
+
+        table th{
+            text-align: left;
+        }
+
+        table td{
+            padding: 10px;
+            
+        }
+
+        #dif{
+            background-color: #d3d3d3;
+            border-top: 1px solid #A9A9A9;
+            border-bottom: 1px solid #A9A9A9;
+        }
+
+        
+
 
         
     </style>
 </head>
 <body>
     <div class="box">
-        <article class="lateral">
+        <header class="lateral">
             <div class="content">
-                <div class="icon"><img src="projetostrata/avatar.jpg" alt=""></div>
+                <div class="icon"><a href="http://html5up.net" target="_blank"><img src="projetostrata/avatar.jpg" alt=""></a></div>
                 <div class="desclateral">
-                    <p>I am Strata, a super simple <br> responsive site templete freebie <br> crafted by HTML5 UP.</p>
+                    
+                        <p>I am Strata, a super simple <br> responsive site templete freebie <br> crafted by <a href="http://html5up.net">HTML5 UP</a>.</p>
+                    
                 </div>
                 <div class="rodape">
                     <ul>
@@ -409,7 +495,7 @@
                     <p>Untitled | Design:HTML 5UP</p>
                 </div>
             </div>
-        </article>
+        </header>
         
             
                 <div id="principal">
@@ -430,8 +516,9 @@
                                 
                                     <div class="card">
                                     
-                                            <a href="google.com">
+                                            <a href="projetostrata/fulls/01.jpg">
                                                 <div class="iconcard">
+                                                    <img src="projetostrata/thumbs/01.jpg" alt="Carro parado em rua">
                                                     <div class="overlay">
                                                         <div class="overlayp">
                                                             <p>View</p>
@@ -448,8 +535,9 @@
                                 </div>
                                 <div class="card">
                                     
-                                    <a href="google.com">
-                                        <div class="iconcard" style="background-image: url(projetostrata/thumbs/02.jpg);">
+                                    <a href="projetostrata/fulls/02.jpg">
+                                        <div class="iconcard">
+                                            <img src="projetostrata/thumbs/02.jpg" alt="Floresta iluminada">
                                             <div class="overlay">
                                                 <div class="overlayp">
                                                     <p>View</p>
@@ -465,8 +553,9 @@
                              </div>
                              <div class="cards1">
                                 <div class="card">
-                                    <a href="google.com">
-                                        <div class="iconcard" style="background-image: url(projetostrata/thumbs/03.jpg);">
+                                    <a href="projetostrata/fulls/03.jpg">
+                                        <div class="iconcard">
+                                            <img src="projetostrata/thumbs/03.jpg" alt="Biblioteca">
                                             <div class="overlay">
                                                 <div class="overlayp">
                                                     <p>View</p>
@@ -480,8 +569,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <a href="google.com">
-                                        <div class="iconcard" style="background-image: url(projetostrata/thumbs/04.jpg);">
+                                    <a href="projetostrata/fulls/04.jpg">
+                                        <div class="iconcard">
+                                            <img src="projetostrata/thumbs/04.jpg" alt="Pessoa andando sobre escada">
                                             <div class="overlay">
                                                 <div class="overlayp">
                                                     <p>View</p>
@@ -501,8 +591,9 @@
                                 
                                 <div class="card">
                                 
-                                    <a href="google.com">
-                                        <div class="iconcard" style="background-image: url(projetostrata/thumbs/05.jpg);">
+                                    <a href="projetostrata/fulls/05.jpg">
+                                        <div class="iconcard">
+                                            <img src="projetostrata/thumbs/05.jpg" alt="Montanha com neve">
                                             <div class="overlay">
                                                 <div class="overlayp">
                                                     <p>View</p>
@@ -519,8 +610,9 @@
                             </div>
                             <div class="card">
                                 
-                                <a href="google.com">
-                                                <div class="iconcard" style="background-image: url(projetostrata/thumbs/06.jpg);">
+                                <a href="projetostrata/fulls/06.jpg">
+                                                <div class="iconcard">
+                                                    <img src="projetostrata/thumbs/06.jpg" alt="Casa na árvore">
                                                     <div class="overlay">
                                                         <div class="overlayp">
                                                             <p>View</p>
@@ -549,9 +641,23 @@
                                     <div class="boxcontact">
                                         <div class="inputsarea">
                                         <form action="#" method="post">
-                                         <input type="text" placeholder="Name" id="inptext">
-                                         <input type="email" name="email" id="inpemail" placeholder="Email">
-                                         <textarea name="txtarea" id="inpareatxt" cols="20" rows="10" placeholder="Message"></textarea>
+                                        
+                                            <div class="formarea">
+                                                <div class="inp">
+                                                    <label for="inptext" class="label-getintouch">Name</label>
+                                                     <input type="text" placeholder="Name" id="inptext">
+                                                </div>
+                                                 <div class="inp1">
+                                                     <label for="inpemail" class="label-getintouch">Email</label>
+                                                     <input type="email" name="email" id="inpemail" placeholder="Email">
+                                                 </div>
+                                            </div>
+                                        
+                                        <div class="inp3">
+                                            <label for="inpareatxt">Escreva uma mensagem:</label>
+                                             <textarea name="txtarea" id="inpareatxt" cols="20" rows="10" placeholder="Message"></textarea>
+                                        </div>
+
                                          <input type="submit" value="Send Message" id="submit">
                                         </form>
                                         </div>
@@ -603,6 +709,174 @@
                                               i++;
                                             }
                                         </p></textarea></div>
+
+                                        <h3>List</h3>
+                                        
+                                        <div class="itenslist">
+                                           
+                                            <div class="desordenada">
+                                                <h4>Unordered</h4>
+                                                <ul>
+                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="ordenada">
+                                                <h4>Ordered</h4>
+                                                <ol>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                </ol>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="alternada">
+                                            <h4>Alternada</h4>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                            </ul>
+                                        </div>
+
+                                        <h4>Icons</h4>
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-google"></i>
+                                        <i class="fab fa-instagram"></i>
+
+
+                                        <h4>Actions</h4>
+
+                                        <p>
+                                            <a href="">Default</a>
+                                            <a href="">Default</a>
+                                        </p>
+
+                                        <p>
+                                            <a href="">Small</a>
+                                            <a href="">Small</a>
+                                        </p>
+
+                                        <p><a href="">Default</a></p>
+
+                                        <p><a href="">Default</a></p>
+
+                                        <p><a href="">Default</a></p>
+
+                                        <p><a href="">Default</a></p>
+
+
+                                        <h3>Tabela</h3>
+                                        <h4>Default</h4>
+                                        <table>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Price</th>
+
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item One</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Item Two</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>19.99</td>
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item Three</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Item Four</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>19.99</td>
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item Five</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>100.00</td>
+                                            </tr>
+                                        </table>
+
+
+
+                                        <h4>Alternate</h4>
+                                        <table id="table2">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Price</th>
+
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item One</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Item Two</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>19.99</td>
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item Three</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Item Four</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>19.99</td>
+                                            </tr>
+
+
+                                            <tr id="dif">
+                                                <td>Item Five</td>
+                                                <td>Lorem ipsum dolor sit amet.</td>
+                                                <td>29.99</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>100.00</td>
+                                            </tr>
+                                        </table>
+
                                 
                              </article>
                 
