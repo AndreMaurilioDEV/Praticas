@@ -72,7 +72,7 @@
              margin: auto;
         }
 
-        article.cards, article.contact{
+        article.cards, article.contact {
             width: 900px;
             margin: auto;
         }
@@ -80,6 +80,8 @@
         article.cards{
             margin-top: 40px;
         }
+
+       
     
 
         .icon{
@@ -184,6 +186,72 @@
         .btncards{
             margin-top: 35px;
             margin-bottom: 35px;
+        }
+
+        p > button{
+            padding: 15px 40px;
+
+        }
+
+        
+        .default{
+            border: 1px solid #A9A9A9;
+            padding: 15px 40px;
+            margin-bottom: 0px;
+            display: inline-block;
+            color: #808080;
+            border-radius: 5px;
+        }
+
+        .small{
+            border: 1px solid #A9A9A9;
+            padding: 10px 40px;
+            margin-bottom: 0px;
+            display: inline-block;
+            border-radius: 5px;
+            color: #808080;
+            font-size: smaller;
+
+        }
+
+        .big{
+            border: 1px solid #A9A9A9;
+            padding: 25px 70px;
+            margin-bottom: 0px;
+            display: inline-block;
+            color: #808080;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 5px;
+
+        }
+
+        .special{
+            background-color: #20B2AA;
+            color: white;
+        }
+
+        .fit{
+            border: 1px solid #A9A9A9;
+            padding: 15px 215px;
+            margin-bottom: 0px;
+            display: inline-block;
+            border-radius: 5px;
+
+        }
+
+        .fitsmall{
+            border: 1px solid #A9A9A9;
+            padding: 10px 195px;
+            margin-bottom: 0px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: smaller;
+
+        }
+
+        .elements button{
+           
         }
 
         .desccontact{
@@ -338,6 +406,7 @@
             background-color: white;
             border: 1px solid #d3d3d3;
             border-radius: 5px;
+            cursor: pointer;
             
         }
 
@@ -349,8 +418,9 @@
 
         
 
-        .inputsarea input:focus, #inpareatxt:focus{
+        .inputsarea input:focus, #inpareatxt:focus, #formtxt:focus, #inpemail:focus, #inptext:focus, #elementstext:focus, #elementsemail:focus, select:focus{
             
+
             outline: 2px solid #20B2AA;
            
             
@@ -364,7 +434,7 @@
 
         .elements a{
             text-decoration: none;
-            color: #20B2AA;
+            color: #808080;
 
         }
 
@@ -469,6 +539,117 @@
             border-bottom: 1px solid #A9A9A9;
         }
 
+        #categoria{
+            display: block;
+        }
+
+        .inputcheck{
+            display: block;
+        }
+
+        #formtxt{
+            display: block;
+            width: 900px;
+            height: 150px;
+            padding: 10px 0px 0px 10px;
+            border-radius: 5px;
+             background-color: #DCDCDC;
+            border: none;
+            
+        }
+
+        .formelements{
+            margin-top: 25px;
+            display: flex;
+        }
+        
+        .category, .radio, .inputcheck, .txtform{
+        margin-top: 10px;
+        }
+
+        select{
+            margin-top: 5px;
+            width: 900px;
+            padding: 10px;
+            border-radius: 5px;
+            color: #808080;
+            border: 0;
+            background-color: #d3d3d3;
+        }
+
+        
+
+        #prioridade, #check02{
+            margin-left: 80px;
+        }
+
+        #prioridade:first-child{
+            margin-left: 0px;
+        }
+
+        #elementstext, #elementsemail{
+            display: block;
+            padding: 10px 45px 10px 10px;
+            border-radius: 5px;
+            background-color: #DCDCDC;
+            width: 390px;
+            border: none;
+        }
+
+        #elementsemail{
+            margin-left: 10px;
+        }
+
+        .inpelements label{
+            margin-left: 20px;
+        }
+
+
+        .iconfit{
+            width: 900px;
+            height: 500px;
+            background-color: gray;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .iconfit img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            
+        }
+
+        .boxicons{
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .iconimages{
+            width: 280px;
+            height: 150px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+
+        .iconimages img{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+          
+        }
+
+        
+
+        
+        
+
+        
+
+
         
 
 
@@ -499,6 +680,7 @@
         
             
                 <div id="principal">
+
                 
                         <article class="top">
                             <div class="contentprincipal">
@@ -756,22 +938,22 @@
                                         <h4>Actions</h4>
 
                                         <p>
-                                            <a href="">Default</a>
-                                            <a href="">Default</a>
+                                            <a href="" class="default">Default</a>
+                                            <a href="" class="default">Default</a>
                                         </p>
 
                                         <p>
-                                            <a href="">Small</a>
-                                            <a href="">Small</a>
+                                            <a href="" class="small">Small</a>
+                                            <a href="" class="small">Small</a>
                                         </p>
 
-                                        <p><a href="">Default</a></p>
+                                        <p><a href="" class="default">Default</a></p>
 
-                                        <p><a href="">Default</a></p>
+                                        <p><a href="" class="default">Default</a></p>
 
-                                        <p><a href="">Default</a></p>
+                                        <p><a href="" class="default">Default</a></p>
 
-                                        <p><a href="">Default</a></p>
+                                        <p><a href="" class="default">Default</a></p>
 
 
                                         <h3>Tabela</h3>
@@ -877,10 +1059,166 @@
                                             </tr>
                                         </table>
 
-                                
+                                        <h4>Buttons</h4>
+
+                                        <p>
+                                            <button class="special default">Special</button>
+                                             <button class="default">Default</button>
+                                        </p>
+
+                                        <p>
+                                            <button class="big">Big</button>
+                                             <button class="default">Default</button>
+                                             <button class="small">Small</button>
+                                        </p>
+
+                                        <p>
+                                            <button class="fit special">Fit</button>
+                                             <button class="fit">Fit</button>
+                                        
+                                        </p>
+
+                                        <p>
+                                            <button class="fitsmall special">Fit+Small</button>
+                                             <button class="fitsmall">Fit+Small</button></a>
+                                        
+                                        </p>
+
+                                        <p>
+                                            <button class="special">Icon</button>
+                                             <button>Icon</button></a>
+                                        
+                                        </p>
+
+
+                                        <h4>Form</h4>
+
+                                        <form action="#" method="post">
+                                            <div class="formelements">
+                                                <div class="inp">
+                                                    <label for="inptext" class="label-getintouch">Name</label>
+                                                     <input type="text" placeholder="Name" id="elementstext">
+                                                </div>
+                                                 <div class="inpelements">
+                                                     <label for="inpemail" class="label-elements">Email</label>
+                                                     <input type="email" name="email" id="elementsemail" placeholder="Email">
+                                                 </div>
+                                            </div>
+
+                                            <div class="category">
+                                                <label for="select">Selecione sua categoria:</label>
+                                                <select name="category" id="categoria">
+                                                    <option value="valorinicial">- Category -</option>
+                                                    <option value="ADM">Administração</option>
+                                                    <option value="RH">Recursos Humanos</option>
+                                                    <option value="Produção">Manufatura</option>
+                                                    <option value="Shipping">Shipping</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="radio">
+                                                <input type="radio" name="priority" id="prioridade" value="low"> Low Priority
+                                                <input type="radio" name="priority" id="prioridade" value="normal"> Normal Priority
+                                                <input type="radio" name="priority" id="prioridade" value="high"> High Priority
+                                            </div>
+
+                                            <div class="inputcheck">
+                                                <input type="checkbox" name="checkbox" id="check01" value="accept"> Email me a copy of this message
+                                                <input type="checkbox" name="checkbox" id="check02" value="accept"> I am human and not a robot
+                                            </div>
+
+
+                                            <div class="txtform">
+                                            <label for="inpareatxt">Escreva uma mensagem:</label>
+                                             <textarea name="txtarea" id="formtxt" cols="20" rows="10" placeholder="Message"></textarea>
+                                        </div>
+
+                                        <div class="submit">
+                                            <input type="submit" value="send" id="submit">
+                                            <input type="reset" value="reset" id="submit">
+                                        </div>
+                                    </form>
+
+                                    <section class="imagens">
+                                        <h4>Image</h4>
+                                        <h3>Fit</h3>
+                                        <div class="iconfit">
+                                            <img src="projetostrata/thumbs/05.jpg" alt="Montanha coberta de neve">
+                                        </div>
+
+                                        <div class="boxicons">
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/01.jpg" alt="">
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/02.jpg" alt="">
+                                                
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/03.jpg" alt="">
+                                                
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="boxicons">
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/04.jpg" alt="">
+                                                
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/02.jpg" alt="">
+                                                
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/06.jpg" alt="">
+                                                
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="boxicons">
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/02.jpg" alt="">
+                                                
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/03.jpg" alt="">
+                                                
+                                            </div>
+
+                                            <div class="iconimages">
+                                                <img src="projetostrata/thumbs/03.jpg" alt="">
+                                                
+                                            </div>
+
+                                        </div>
+        
+                                     </section>
+
+                                     <h4>Left &amp; Right</h4>
+                                     
+                                         <p><img src="projetostrata/avatar.jpg" alt="" class="img-left"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit!</p>
+                                     
+
+                                    
+                                         <p> <img src="projetostrata/avatar.jpg" alt="" class="img-right"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit! </p>
+                                     
+
                              </article>
-                
-                
+
+                            
+
+                             
+        
                         </div>
             
 
