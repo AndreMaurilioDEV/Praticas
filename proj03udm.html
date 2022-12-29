@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 03</title>
+    <title>Strata</title>
     <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
         *{
             padding: 0;
             margin: 0;
@@ -175,13 +176,12 @@
             margin-bottom: 35px;
         }
 
-        .btn button{
+        .btn button, .btncards button{
             padding: 15px 40px;
+            font-family: Poppins, sans-serif;
         }
 
-        .btncards button{
-            padding: 15px 40px;
-        }
+        
 
         .btncards{
             margin-top: 35px;
@@ -191,6 +191,13 @@
         p > button{
             padding: 15px 40px;
 
+        }
+
+        p > a:hover{
+            color: #20B2AA;
+            border: 1px solid #20B2AA;
+            transition: 0.5s;
+            cursor: pointer;
         }
 
         
@@ -250,9 +257,7 @@
 
         }
 
-        .elements button{
-           
-        }
+        
 
         .desccontact{
             margin-top: 25px;
@@ -284,13 +289,16 @@
         }
 
         #inpareatxt{
+
             background-color: #DCDCDC;
             border: none;
         }
 
         #submit{
+
             margin-top: 25px;
             margin-bottom: 25px;
+           
         }
 
 
@@ -307,6 +315,7 @@
             width: 400px;
             height: 217px;
             border-radius: 5px;
+            
         }
 
         .iconcard img{
@@ -354,12 +363,20 @@
 
 
 
-        a:hover button{
+        /*a:hover {
             color: #20B2AA;
             border: 2px solid #20B2AA;
             transition: none 0.5s none;
             cursor: pointer;
         
+        }*/
+
+        button:hover{
+            color: #20B2AA;
+            border: 1px solid #20B2AA;
+            transition: 0.5s;
+            cursor: pointer;
+
         }
 
         .boxcontact{
@@ -402,11 +419,12 @@
         }
 
         #submit{
-            padding: 10px;
+            padding: 10px 40px;
             background-color: white;
             border: 1px solid #d3d3d3;
             border-radius: 5px;
             cursor: pointer;
+            font-family: Poppins, sans-serif;
             
         }
 
@@ -676,6 +694,8 @@
                     <p>Untitled | Design:HTML 5UP</p>
                 </div>
             </div>
+
+
         </header>
         
             
@@ -685,26 +705,32 @@
                         <article class="top">
                             <div class="contentprincipal">
                                 <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Possimus, nesciunt.</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, alias voluptatibus? Ut, magni. Repellat aut minus reprehenderit asperiores quisquam! Sit alias, aliquid ipsum iusto voluptate, nisi facere, omnis quasi officia porro laborum libero. Ea cum dolor vitae ipsam fuga corrupti laudantium a nostrum? A voluptatem soluta doloribus delectus. Natus ea sunt, quas similique eum distinctio iusto inventore quia deserunt veniam quibusdam sapiente, sed debitis id adipisci ipsum error. Aut voluptas est quo molestiae, repellendus alias?</p>
-                                <div class="btn"><a href="#"><button>Learn More</button></a></div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, alias voluptatibus? Ut, magni. Repellat aut minus reprehenderit asperiores quisquam! Sit alias, aliquid ipsum iusto voluptate, nisi facere, omnis quasi officia porro laborum libero. Ea cum dolor vitae ipsam fuga corrupti laudantium a nostrum? A voluptatem soluta doloribus delectus. Natus ea sunt, quas similique eum distinctio iusto inventore quia deserunt veniam quibusdam sapiente, sed debitis id 
+                                        adipisci ipsum error. Aut voluptas est quo molestiae, repellendus alias?</p>
+
+                                <div class="btn">
+                                    <a href="#">
+                                        <button>Learn More</button>
+                                    </a>
+                                </div>
                                 <hr>
                             </div>
                            
                         </article>
                         
                          <article class="cards">
-                             <h2>Recent Work</h2>
-                             <div class="cards1">
+                                 <h2>Recent Work</h2>
+                                    <div class="cards1">
                                 
                                     <div class="card">
-                                    
                                             <a href="projetostrata/fulls/01.jpg">
                                                 <div class="iconcard">
                                                     <img src="projetostrata/thumbs/01.jpg" alt="Carro parado em rua">
-                                                    <div class="overlay">
-                                                        <div class="overlayp">
-                                                            <p>View</p>
-                                                        </div>
+                                                    
+                                                            <div class="overlay">
+                                                                <div class="overlayp">
+                                                                     <p>View</p>
+                                                            </div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -858,16 +884,16 @@
                              <article class="elements">
                                 <h2>Elements</h2>
                                 <h3>Text</h3>
-                                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is code: for (;;) { ... }. Finally, this is a <a href="#">link</a>.</p>
+                                    <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is code: for (;;) { ... }. Finally, this is a <a href="#">link</a>.</p>
                                 <hr>
 
                                 <h3>Heading with a Subtitle</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, dolores?</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis eos illum atque nobis voluptates modi reiciendis eligendi quidem sunt praesentium distinctio molestias, quae soluta labore ipsa hic amet, animi architecto tempora, consectetur saepe. Illo sapiente sed cumque voluptatem consectetur maxime sit est at consequuntur?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, dolores?</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis eos illum atque nobis voluptates modi reiciendis eligendi quidem sunt praesentium distinctio molestias, quae soluta labore ipsa hic amet, animi architecto tempora, consectetur saepe. Illo sapiente sed cumque voluptatem consectetur maxime sit est at consequuntur?</p>
 
                                 <h4>Heading with a Subtitle</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, dolores?</p>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis eos illum atque nobis voluptates modi reiciendis eligendi quidem sunt praesentium distinctio molestias, quae soluta labore ipsa hic amet, animi architecto tempora, consectetur saepe. Illo sapiente sed cumque voluptatem consectetur maxime sit est at consequuntur?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, dolores?</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis eos illum atque nobis voluptates modi reiciendis eligendi quidem sunt praesentium distinctio molestias, quae soluta labore ipsa hic amet, animi architecto tempora, consectetur saepe. Illo sapiente sed cumque voluptatem consectetur maxime sit est at consequuntur?</p>
                                 <hr>
 
                                 <h2>Heading Level 2 </h2>
@@ -879,11 +905,11 @@
 
                                 <blockquote cite="http://www.worldwildlife.org/who/index.html">
                                     <h3>Blockquote</h3>
-                                    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+                                        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
                                     </blockquote>
 
                                     <h3>Preformatted</h3>
-                                    <div class="areapreformatted"><textarea name="txtarea" id="preformatted" cols="30" rows="15" disabled>
+                                        <div class="areapreformatted"><textarea name="txtarea" id="preformatted" cols="30" rows="15" disabled>
                                         <p>
                                             int i = 0;
                                             while (i < 5) {
@@ -898,22 +924,22 @@
                                            
                                             <div class="desordenada">
                                                 <h4>Unordered</h4>
-                                                <ul>
-                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                                </ul>
+                                                    <ul>
+                                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                                    </ul>
                                             </div>
                                             
                                             <div class="ordenada">
                                                 <h4>Ordered</h4>
-                                                <ol>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <ol>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet consectetur</li>
                                                 </ol>
                                             </div>
 
@@ -921,18 +947,18 @@
 
                                         <div class="alternada">
                                             <h4>Alternada</h4>
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                            </ul>
+                                                <ul>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                </ul>
                                         </div>
 
                                         <h4>Icons</h4>
-                                        <i class="fab fa-facebook"></i>
-                                        <i class="fab fa-google"></i>
-                                        <i class="fab fa-instagram"></i>
+                                            <i class="fab fa-facebook"></i>
+                                            <i class="fab fa-google"></i>
+                                            <i class="fab fa-instagram"></i>
 
 
                                         <h4>Actions</h4>
@@ -947,24 +973,32 @@
                                             <a href="" class="small">Small</a>
                                         </p>
 
-                                        <p><a href="" class="default">Default</a></p>
+                                        <p> 
+                                            <a href="" class="default">Default</a>
+                                        </p>
 
-                                        <p><a href="" class="default">Default</a></p>
+                                        <p>
+                                            <a href="" class="default">Default</a>
+                                        </p>
 
-                                        <p><a href="" class="default">Default</a></p>
+                                        <p>
+                                            <a href="" class="default">Default</a>
+                                        </p>
 
-                                        <p><a href="" class="default">Default</a></p>
+                                        <p>
+                                            <a href="" class="default">Default</a>
+                                        </p>
 
 
                                         <h3>Tabela</h3>
-                                        <h4>Default</h4>
-                                        <table>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Price</th>
+                                            <h4>Default</h4>
+                                                <table>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Description</th>
+                                                        <th>Price</th>
 
-                                            </tr>
+                                                    </tr>
 
 
                                             <tr id="dif">
@@ -1005,7 +1039,7 @@
                                                 <td></td>
                                                 <td>100.00</td>
                                             </tr>
-                                        </table>
+                                                </table>
 
 
 
@@ -1107,13 +1141,13 @@
 
                                             <div class="category">
                                                 <label for="select">Selecione sua categoria:</label>
-                                                <select name="category" id="categoria">
-                                                    <option value="valorinicial">- Category -</option>
-                                                    <option value="ADM">Administração</option>
-                                                    <option value="RH">Recursos Humanos</option>
-                                                    <option value="Produção">Manufatura</option>
-                                                    <option value="Shipping">Shipping</option>
-                                                </select>
+                                                    <select name="category" id="categoria">
+                                                        <option value="valorinicial">- Category -</option>
+                                                        <option value="ADM">Administração</option>
+                                                        <option value="RH">Recursos Humanos</option>
+                                                        <option value="Produção">Manufatura</option>
+                                                        <option value="Shipping">Shipping</option>
+                                                    </select>
                                             </div>
 
                                             <div class="radio">
@@ -1129,19 +1163,21 @@
 
 
                                             <div class="txtform">
-                                            <label for="inpareatxt">Escreva uma mensagem:</label>
-                                             <textarea name="txtarea" id="formtxt" cols="20" rows="10" placeholder="Message"></textarea>
+                                                <label for="inpareatxt">Escreva uma mensagem:</label>
+                                                    <textarea name="txtarea" id="formtxt" cols="20" rows="10" placeholder="Message"></textarea>
                                         </div>
 
                                         <div class="submit">
-                                            <input type="submit" value="send" id="submit">
-                                            <input type="reset" value="reset" id="submit">
+                                            <input type="submit" value="Send" id="submit">
+                                            <input type="reset" value="Reset" id="submit">
                                         </div>
                                     </form>
 
                                     <section class="imagens">
                                         <h4>Image</h4>
+
                                         <h3>Fit</h3>
+
                                         <div class="iconfit">
                                             <img src="projetostrata/thumbs/05.jpg" alt="Montanha coberta de neve">
                                         </div>
@@ -1206,11 +1242,22 @@
 
                                      <h4>Left &amp; Right</h4>
                                      
-                                         <p><img src="projetostrata/avatar.jpg" alt="" class="img-left"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit!</p>
+                                            <p>
+                                                <img src="projetostrata/avatar.jpg" alt="" class="img-left">
+
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit!
+                                            
+                                            </p>
                                      
 
                                     
-                                         <p> <img src="projetostrata/avatar.jpg" alt="" class="img-right"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit! </p>
+                                         <p>
+                                            <img src="projetostrata/avatar.jpg" alt="" class="img-right"> 
+                                            
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident culpa non iusto repudiandae odio ipsum eos soluta quidem minus, tempora numquam doloribus molestiae, fugiat a distinctio eaque veniam vel odit, explicabo excepturi sit. Ratione quam minus quos officia voluptas repellendus laboriosam possimus accusantium iure aperiam tempore, at ipsum cupiditate voluptatem optio voluptatum impedit exercitationem fugit blanditiis? Iure illum, dolore incidunt veritatis possimus error. In delectus alias, eligendi doloremque, eius veniam temporibus vitae ex deleniti sequi provident natus ullam, expedita sunt placeat atque amet quae nam excepturi neque quam maiores rem minima! Facere laudantium vitae iure, eligendi blanditiis quos! Aut, doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam soluta similique. Aspernatur quaerat repellendus quisquam repellat saepe tenetur consectetur sunt rem amet, iure provident nulla nesciunt labore quas quod expedita est autem eligendi eius harum natus quasi soluta eaque dolorum. Asperiores ratione harum dicta enim neque quasi, magnam suscipit! 
+                                             
+                                                    
+                                            </p>
                                      
 
                              </article>
