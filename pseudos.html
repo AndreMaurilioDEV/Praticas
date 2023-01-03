@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos classes/elementos</title>
+    <style>
+        input[type="checkbox"]{
+            width: 15px;
+            height: 15px;
+           
+        }
+
+        input[type="checkbox"]:checked{
+            width: 10px;
+            height: 10px;
+        }
+
+        input[type="text"]::placeholder{
+            color: green;
+           font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        input[type="text"]:focus{
+        
+            border: none;
+            background-color: #d3d3d3;
+           outline: 2px solid red;
+           color: yellow;
+           
+        }
+
+        
+
+
+        input[type="email"]::placeholder{
+            color: red;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 18px;
+           
+
+        }
+
+        input[type="email"]:focus{
+            background-color: aqua;
+            outline: 1px solid royalblue;
+            border: 0;
+        }
+
+        input[readonly]{
+            background-color: lightblue;
+        }
+
+
+
+        a:focus{
+            background-color: #d3d3d3;
+        }
+
+        a:visited{
+            color: green;
+        }
+        
+        #inptxt, #inpemail{
+            display: block;
+            padding: 10px;
+        }
+
+        button:disabled{
+            background-color: cadetblue;
+            color: white;
+            outline: 2px solid green;
+            border: 0;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <label><input type="checkbox" name="checkbox" value="sim"> Aceitar os termos</label>
+
+    <input type="text" name="inptxt" id="inptxt" placeholder="Insira seu nome">
+    <input type="text" name="inptxt" id="inptxt" value="Insira seu nome">
+    <input type="text" name="inptxt" id="inptxt" placeholder="Apenas leitura" readonly>
+    <input type="text" name="inptxt" id="inptxt" value="Desativado" disabled>
+
+
+   <input type="email" name="inpemail" id="inpemail" placeholder="Insira seu email">
+
+    <ul>
+        <li>
+            <a href="https://google.com">LINK1</a>
+            <a href="https://google.com">LINK2</a>
+        </li>
+    </ul>
+
+    <button disabled>Disabled</button>
+    
+</body>
+</html>
