@@ -15,14 +15,53 @@
            
         }
 
-        .title{
-            font-size: 24px;
+        .titlecards{
+            font-size: 35px;
             font-weight: normal;
+            color: #696969;
+            font-weight: 300;
         }
 
         .psec-2{
-            font-size: 18px;
-            font-weight: normal;
+            line-height: 35px;
+            font-size: 23px;
+            font-weight: 300;
+            color: #a9a9a9;
+        }
+
+        .pcontent-header{
+            color: white;
+            font-size: 24px;
+            font-weight: lighter;
+
+        }
+
+        .header-content h1{
+            font-size: 70px;
+            color: white;
+            font-weight: lighter;
+            text-align: center;
+            
+        }
+
+
+        .pcontent{
+            font-size: 24px;
+            color: #808080;
+            font-weight: lighter;
+            margin-top: 60px;
+            
+        }
+
+
+        .h1special{
+            color: #696969;
+            font-size: 46px;
+            margin-bottom: 80px;
+            font-weight: 300;
+        }
+
+        hr{
             color: #a9a9a9;
         }
 
@@ -37,8 +76,6 @@
             background-attachment: scroll fixed;
 
         }
-
-        
 
         .itensli{
            position: absolute;
@@ -64,32 +101,62 @@
             left: 50%;
         }
 
-        .header-content h1{
-            font-size: 65px;
-            font-weight: normal;
-        }
-
-        .header-content h1{
-            text-align: center;
-            font-weight: normal;
-        }
-
-        .pcontent{
-            font-size: 24px;
-        }
-
-        .button{
+        
+        .buttonheader{
             display: flex;
             justify-content: center;
             margin-top: 25px;
+           
         }
 
-        .button button{
+        .buttonheader button{
             padding: 20px 100px;
             margin-left: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: white;
+            font-size: 22px;
+            color: #696969;
         }
 
-        
+        .buttonheader .specialbutton{
+            background-color: transparent;
+            color: white;
+            border: 2px solid #a9a9a9;
+            font-weight: 350;
+            
+        }
+
+        .btncards{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btncards .buttoncards{
+            padding: 20px 50px;
+            border-radius: 5px;
+            border: 2px solid #d3d3d3;
+            background-color: white;
+            font-size: 18px;
+            color: #808080;
+        }
+
+        a:hover .buttoncards{
+            background-color: #F5F5F5;
+            transition: 0.5s;
+            cursor: pointer;
+            
+        }
+
+        .specialbutton:hover{
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+       
+    
 
         .special{
             background-color: white;
@@ -125,22 +192,12 @@
 
         }
 
-        .special h1{
-            font-size: 46px;
-            margin-bottom: 80px;
-        }
-
-        .special p{
-            margin-top: 60px;
-            
-            
-        }
 
         .icon{
             height: 419px;
             width: 1322px;
             margin: auto;
-            background-color: aqua;
+            background-color: white;
             border-radius: 0px 0px 5px 5px;
             
         }
@@ -167,7 +224,9 @@
         .article-s3{
             height: 600px;
             width: 618px;
-            background-color: aqua;
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            border-radius: 5px;
+            background-color: white;
             position: relative;
             border-radius: 5px;
             /*display: flex;
@@ -219,6 +278,87 @@
             margin-top: 25px;
         }
 
+        .container2{
+            background-color: #e89980;
+            width: 100%;
+          
+            
+        }
+
+
+        .contact{
+            background-color: #e89980;
+            width: 1322px;
+            height: 397px;
+            margin: auto;
+            position: relative;
+            
+            
+        }
+
+        .contentcontact{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            
+        }
+
+
+        .h1contact, .inputcontact{
+            display: flex;
+            justify-content: center;
+        }
+
+        .inputcontact{
+            margin-bottom: 50px;
+        }
+
+        input[type="email"]{
+            padding: 24px 185px 24px 18px;
+            border-radius: 5px;
+            border: none;
+            background-color: #FFFFFF26;
+        }
+
+        input[type="email"]::placeholder{
+            font-size: 20px;
+            color: #F9E6DF;
+        }
+
+        input[type="submit"]{
+            margin-left: 20px;
+            padding: 0px 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: white;
+            font-size: 20px;
+            color: #e89980;
+
+        }
+
+        .h1contact h1{
+            color: #F9E6DF;
+            font-size: 48px;
+            font-weight: lighter;
+            margin-bottom: 40px;
+
+        }
+
+        .pcontact p{
+            font-size: 24px;
+            color: #F9E6DF;
+            margin-bottom: 50px;
+            font-weight: lighter;
+            width: 695px;
+
+        }
+
+
+       
+
+       
+
         
 
        
@@ -248,10 +388,10 @@
         
         <div class="header-content">
             <h1>Alpha</h1>
-            <p class="pcontent">Another fine responsive site template freebie by HTML5 UP.</p>
-        <div class="button">
+            <p class="pcontent-header">Another fine responsive site template freebie by HTML5 UP.</p>
+        <div class="buttonheader">
             <button>Sign Up</button>
-            <button>Learn More</button>
+            <a href="https://html5up.net/" target="_blank"><button class="specialbutton">Learn More</button></a>
         </div>
 
     </div>
@@ -263,10 +403,10 @@
 
     <div class="container">
         <section class="special">
-            <h1>Introducing the ultimate mobile app <br>
+            <h1 class="h1special">Introducing the ultimate mobile app <br>
                 for doing stuff with your phone</h1>
                 <hr>
-                <p class="pcontent">Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare
+                <p class="pcontent">Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare <br>
                     adipiscing nunc adipiscing. Condimentum turpis massa.</p>
 
                     
@@ -283,7 +423,7 @@
             <article class="articlesec-2">
                 <div class="contentsec-2">
                     <div class="iconsec-2"><img src="projetostrata/avatar.jpg" alt=""></div>
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
                 </div>
              
@@ -293,7 +433,7 @@
             <article class="articlesec-2">
                 <div class="contentsec-2">
                     <div class="iconsec-2"><img src="projetostrata/avatar.jpg" alt=""></div>
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
                 </div>
             </article>
@@ -306,7 +446,7 @@
             <article class="articlesec-2">
                 <div class="contentsec-2">
                     <div class="iconsec-2"><img src="projetostrata/avatar.jpg" alt=""></div>
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
                 </div>
              
@@ -316,7 +456,7 @@
             <article class="articlesec-2">
                 <div class="contentsec-2">
                     <div class="iconsec-2"><img src="projetostrata/avatar.jpg" alt=""></div>
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
                 </div>
             </article>
@@ -335,9 +475,10 @@
                 <img src="projetostrata/thumbs/03.jpg" alt="">
 
                 <div class="contentsec-3">
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
                 </div>
+                <div class="btncards"><a href="https://html5up.net/" target="_blank"><button class="buttoncards">Learn More</button></a></div>
 
             </article>
 
@@ -345,16 +486,36 @@
                 <img src="projetostrata/thumbs/03.jpg" alt="">
                
                 <div class="contentsec-3">
-                    <div class="titlesec-2"><h3 class="title">Magna etiam</h3></div>
+                    <div class="titlesec-2"><h3 class="titlecards">Magna etiam</h3></div>
                     <div class="descsec-2"><p class="psec-2">Integer volutpat ante et accumsan commophasellus sed <br> aliquam feugiat lorem aliquet ut enim rutrum phasellus <br> iaculis accumsan dolore magna aliquam veroeros.</p></div>
-                    
                     </div>
+                    <div class="btncards"><a href="https://html5up.net/" target="_blank"><button class="buttoncards">Learn More</button></a></div>
                 </div>
             </article>
         </div>
-
-
     </section>
+
+    <div class="container2">
+        
+            <section class="contact">
+                <div class="contentcontact">
+                    <div class="h1contact">
+                        <h1>Sign up for beta access</h1>
+                    </div>
+                    <div class="pcontact">
+                        <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+                    </div>
+
+                    <div class="inputcontact">
+                        <input type="email" name="email" id="inpemail" placeholder="Email Adress">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        </div>
+  
 
     
     
