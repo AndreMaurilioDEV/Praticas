@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox switch</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        } 
+
+        body{
+            background-color: lightblue;
+        }
+        span{  /*CAIXA BRANCA*/
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 25px;
+            border: 2px solid #a9a9a9;
+            
+        }
+
+
+        label{  /*LINHA DO INPUT, SPAN E LABEL*/
+            display: inline-block;
+            height: 80px;
+            margin: 40px;
+          
+
+        }
+
+        
+
+       
+
+        input{ /*SUMIR INPUT*/
+            opacity: 0; 
+            
+
+        }
+
+
+        span{ /*BOLA DO SPAN:BEFORE RELACIONADO A POSIÇÃO PAI DO SPAN*/
+            position: relative;
+        }
+
+        span:before{ /*STYLE DA BOLA DENTRO DA CAIXA SPAN*/
+            position: absolute;
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #d3d3d3;
+            top: 0px;
+            left: 0px;
+            border: 2px solid lightgray;
+            border-radius: 100%;
+            box-sizing: border-box;
+
+        }
+
+        
+        
+
+       
+        
+
+        input:checked + span:before{ /*AO CHECKAR INPUT, A BOLA SPAN:BEFORE VAI DESLOCAR 40PX DENTRO DO POSITION PAI(SPAN CAIXA) DE FORMA MAIS LENTA COM TRANSITION E MUDAR DE COR*/
+            position: relative;
+            left: 40px;
+            transition: 0.2s;
+            background-color: #ADE792;
+          
+           
+        }
+
+        
+    </style>
+</head>
+<body>
+   
+        
+            <label>
+                <input type="checkbox">
+                <span></span>
+        
+            </label>
+
+            
+    
+</body>
+</html>
